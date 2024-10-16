@@ -11,38 +11,71 @@
             <figure>
                 <img src="images/Logo - HTML.png" height="100px" alt="Logo HTML">
                 <figcaption> Logo HTML </figcaption>
-            
-                <h1> HTML, o Esqueleto da Web </h1>
+                <h1 id="cabeçalho"> HTML, o Esqueleto da Web </h1>
                 <time>10/10/2024</time>
            
             <nav id="menu"> 
+                <h3> Menu </h3>
                 <ul>
-                    <li> HTML, o Esqueleto da Web </li>
-                    <li> <a href="#Referências"> Referências </a></li>
+                    <li> <a href="#cabeçalho"> HTML, o Esqueleto da Web </a></li>
+                    <li><a href="#topic1"> O que é o HTML?</a></li>
+                    <li><a href="#topic2"> Estrutura básica de um HTML </a></li>
+                    <li> <a href="#rodapé"> Referências </a></li>
                 </ul>
             </nav>
         </header>
-
         <article>
             <header>
-                <h1> O que é o HTML </h1>  
+                <h1 id="topic1"> O que é o HTML? </h1>  
             </header>
-
             <section>
                 <p>
-                    <dfn> HTML </dfn> ou <em>HyperText Markup Language</em>, é a linguagem padrão utilizada para criar e estruturar páginas na web. Ele permite que desenvolvedores definam a estrutura e o conteúdo de um site através de uma série de elementos conhecidos como <strong>tags</strong>.
+                    <dfn> HTML </dfn> é o acrônimo para <em><strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <Strong>L</Strong>anguage</em>. É a linguagem padrão utilizada para criar e estruturar páginas na web. Apesar de na sua denominação haver o termo "linguagem" não se trata de uma linguagem de programação: é uma linguagem de marcação utilizada pelos desenvolvedores Front-end para definir a estrutura e conteúdo de um site. Para isso eles utilizam uma série de elementos conhecidos como <strong>tags</strong>.
                 </p>
                 <p>
-                    Tags são os blocos de construção do HTML. Elas são usadas para marcar o início e o fim de um elemento HTML. Cada tag é envolvida por colchetes angulares (&lt; >). Por exemplo, a tag &lt;p> é usada para definir um parágrafo. A maioria das tags vem em pares: uma tag de abertura (&lt;p>) e uma tag de fechamento (&lt;/p>).
+                    Tags são os blocos de construção do HTML. Elas são usadas para marcar o início e o fim de um elemento HTML. Estes blocos indicam como o navegador irá apresentar o conteúdo nele contido. Cada tag é envolvida pelo símbolos de maior e menor (&lt; >). Por exemplo, a tag &lt;p> é usada para definir um parágrafo. A maioria das tags vem em pares: uma tag de abertura (&lt;p>) e uma tag de fechamento (&lt;/p>). Cada tag possui uma função definida e padronizada que pode ser personalizada por meio dos atributos. 
                 </p>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>
+                    Atributos são usados para fornecer informações adicionais sobre um elemento HTML. Eles são sempre incluídos na tag de abertura e consistem em um nome e um valor. Por exemplo, a tag &lt;a> (link) pode ter um atributo href que especifica o URL para o qual o link aponta.
+                </p>
             </section>
-            
+        </article>
+        <article>
+            <header>
+                <h1 id="topic2"> Estrutura básica de um HTML </h1>  
+            </header>
+            <section>
+                <p>
+                   Uma página web comum pode ser composta por centenas de tags, entretanto a página mais simples deve conter as seguinte estrutura:
+                    <code>
+                    <pre>
+                    < !DOCTYPE html >
+                    < html > 
+                        < head > 
+                            < title > < /title >
+                        < / head > 
+                        < body > 
+                        < /body >
+                    < /html >
+                    </pre>
+                    </code>
+                    A diretiva <kbd>!DOCTYPE html</kbd> serve para indicar ao navegador que o texto refere-se a um HTML5.  
+                </p>
+            </section>
+        </article>
+        <article>
+            <header>
+                <h1> Conclusão </h1>
+            </header>
+            <section>
+                <p>
+                    HTML é a base de qualquer página web. Compreender como usar tags e atributos corretamente é essencial para criar sites bem estruturados e funcionais. À medida que você se familiariza com essas tags básicas, você pode começar a explorar tags mais avançadas e técnicas de CSS e JavaScript para aprimorar ainda mais suas habilidades de desenvolvimento web.
+                </p>
+            </section>
         </article>
         <footer>
-            <h1 class="#Referências"> Referências </h1>
+            <h1 id="rodapé"> Referências </h1>
             <a href="https://www.homehost.com.br/blog/tutoriais/caracteres-especiais-acentos-html/" target="_blank"> Lista com todos os códigos para caracteres especiais </a>
-
         </footer>
     </body>
 
