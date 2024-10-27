@@ -1,39 +1,41 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title> HTML: Nos bastidores das Web Pages </title>
-        <link href="" rel="stylesheet"> 
-    </head>
-
-    <body>
-        <header>
-            <figure>
-                <img src="images/Logo - HTML.png" height="100px" alt="Logo HTML">
-                <figcaption> Logo HTML </figcaption>
-                <h1 id="cabeçalho"> HTML, o Esqueleto da Web </h1>
-                <time>10/10/2024</time>
-           
-            <nav id="menu"> 
-                <h3> Menu </h3>
-                <ul>
-                    <li> <a href="#cabeçalho"> HTML, o Esqueleto da Web </a></li>
-                    <li><a href="#topic1"> O que é o HTML?</a></li>
-                    <li><a href="#topic2"> Estrutura básica de um HTML </a></li>
-                    <li> <a href="#rodapé"> Referências </a></li>
-                </ul>
-            </nav>
-        </header>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML: Nos bastidores das Web Pages</title>
+    <link href="styles.css" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="images/Logo - HTML.png" height="100" alt="Logo HTML">
+            <figcaption>Logo HTML</figcaption>
+        </figure>
+        <h1 id="cabeçalho">HTML, o Esqueleto da Web</h1>
+        <time datetime="2024-10-10">10/10/2024</time>
+        <nav id="menu"> 
+            <h3>Sumário</h3>
+            <ol>
+                <li><a href="#cabeçalho">HTML, o Esqueleto da Web</a></li>
+                <li><a href="#topic1">O que é o HTML?</a></li>
+                <li><a href="#topic2">Estrutura básica de um HTML</a></li>
+                <li><a href="#topic3">Principais Tags e suas funções</a></li>
+                <li><a href="#rodapé">Referências</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
         <article>
             <header>
-                <h1 id="topic1"> O que é o HTML? </h1>  
+                <h2 id="topic1">O que é o HTML?</h2>
+                <a href="#menu"><small>Início</small></a>  
             </header>
             <section>
                 <p>
-                    <dfn> HTML </dfn> é o acrônimo para <em><strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <Strong>L</Strong>anguage</em>. É a linguagem padrão utilizada para criar e estruturar páginas na web. Apesar de na sua denominação haver o termo "linguagem" não se trata de uma linguagem de programação: é uma linguagem de marcação utilizada pelos desenvolvedores Front-end para definir a estrutura e conteúdo de um site. Para isso eles utilizam uma série de elementos conhecidos como <strong>tags</strong>.
+                    <dfn>HTML</dfn> é o acrônimo para <em><strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage</em>. É a linguagem padrão utilizada para criar e estruturar páginas na web. Apesar de na sua denominação haver o termo "linguagem" não se trata de uma linguagem de programação: é uma linguagem de marcação utilizada pelos desenvolvedores Front-end para definir a estrutura e conteúdo de um site. Para isso eles utilizam uma série de elementos conhecidos como <strong>tags</strong>.
                 </p>
                 <p>
-                    Tags são os blocos de construção do HTML. Elas são usadas para marcar o início e o fim de um elemento HTML. Estes blocos indicam como o navegador irá apresentar o conteúdo nele contido. Cada tag é envolvida pelo símbolos de maior e menor (&lt; >). Por exemplo, a tag &lt;p> é usada para definir um parágrafo. A maioria das tags vem em pares: uma tag de abertura (&lt;p>) e uma tag de fechamento (&lt;/p>). Cada tag possui uma função definida e padronizada que pode ser personalizada por meio dos atributos. 
+                    Tags são os blocos de construção do HTML. Elas são usadas para marcar o início e o fim de um elemento HTML. Estes blocos indicam como o navegador irá apresentar o conteúdo nele contido. Cada tag é envolvida pelos símbolos de maior e menor (&lt; >). Por exemplo, a tag &lt;p> é usada para definir um parágrafo. A maioria das tags vem em pares: uma tag de abertura (&lt;p>) e uma tag de fechamento (&lt;/p>). Cada tag possui uma função definida e padronizada que pode ser personalizada por meio dos atributos. 
                 </p>
                 <p>
                     Atributos são usados para fornecer informações adicionais sobre um elemento HTML. Eles são sempre incluídos na tag de abertura e consistem em um nome e um valor. Por exemplo, a tag &lt;a> (link) pode ter um atributo href que especifica o URL para o qual o link aponta.
@@ -42,30 +44,229 @@
         </article>
         <article>
             <header>
-                <h1 id="topic2"> Estrutura básica de um HTML </h1>  
+                <h2 id="topic2">Estrutura básica de um HTML</h2>
+                <a href="#menu"><small>Início</small></a>  
             </header>
             <section>
                 <p>
-                   Uma página web comum pode ser composta por centenas de tags, entretanto a página mais simples deve conter as seguinte estrutura:
-                    <code>
-                    <pre>
-                    < !DOCTYPE html >
-                    < html > 
-                        < head > 
-                            < title > < /title >
-                        < / head > 
-                        < body > 
-                        < /body >
-                    < /html >
-                    </pre>
-                    </code>
-                    A diretiva <kbd>!DOCTYPE html</kbd> serve para indicar ao navegador que o texto refere-se a um HTML5.  
+                   Uma página web comum pode ser composta por centenas de tags, entretanto a página mais simples deve conter a seguinte estrutura:
+                    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </code></pre>
+                    <ul>
+                        <li>A diretiva <kbd>&lt;!DOCTYPE html&gt;</kbd> serve para indicar ao navegador que o texto refere-se a um HTML5.</li>
+                        <li>A tag <kbd>&lt;html&gt;</kbd> é a tag raiz, ou seja, todas as outras tags devem derivar dela, onde as principais são a tag <kbd>&lt;head&gt;</kbd> e <kbd>&lt;body&gt;</kbd>.</li>
+                        <li>A tag <kbd>&lt;head&gt;</kbd> é a tag de cabeçalho. Nela estão contidas tags de informações do documento (metadados) como a tag de título <kbd>&lt;title&gt;</kbd>, links, scripts (conexão com JavaScript) e folhas de estilo (conexão com CSS).</li>
+                        <li>A tag <kbd>&lt;body&gt;</kbd> é a que armazena todo o conteúdo do documento HTML. Nela está contida a maioria das outras tags. Devido à grande quantidade de tags no <kbd>&lt;body&gt;</kbd>, é comum, a fins de didática, agrupá-las pela função que desempenham dentro do site. A seguir são apresentados alguns destes agrupamentos.</li>
+                    </ul>   
                 </p>
             </section>
         </article>
         <article>
             <header>
-                <h1> Conclusão </h1>
+                <h2 id="topic3">Principais Tags e suas funções</h2>
+                <a href="#menu"><small>Início</small></a>  
+            </header>
+            <section>
+                <p>
+                   Conforme dito, as tags no <kbd>&lt;body&gt;</kbd> podem ser agrupadas de acordo com sua função. Algumas delas podem ser classificadas conforme abaixo
+                   <h3>Tags Estruturais</h3>
+                   <table>
+                        <caption>
+                            Tags cuja função é estruturar o documento HTML
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Descrição Tag</th>
+                                <th>Função / O que faz</th>
+                                <th>Atributos comuns</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>html</th>
+                                <td>raiz de um documento HTML</td>
+                                <td>lang - define o idioma do site</td>
+                            </tr>
+                            <tr>
+                                <th>head</th>
+                                <td>Armazena informações sobre o documento (metadados)</td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th>body</th>
+                                <td>Representa o conteúdo de um documento HTML</td>
+                                <td> - </td>
+                            </tr>
+                        </tbody>
+                   </table>
+                   <br>
+                   <hr>
+                   <h3>Tags de Semânticas</h3>
+                   <table>
+                        <caption>
+                            Tags cuja função é fornecer semântica ao documento, facilitando a leitura por leitores de tela
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Descrição Tag</th>
+                                <th>Função / O que faz</th>
+                                <th>Atributos comuns</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>article</th>
+                                <td> Tag utilizada para armazenar um conteúdo independente, ou seja, conteúdo que se separado do arquivo pode ser facilmente entendido (como uma notícia por exemplo)</td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th>figure</th>
+                                <td> Tag utilizada para armazenar imagens, ilustrações, diagramas, etc. e opcionalmente um subtítulo ou legenda (utilizando a tag figcaption) </td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th>footer</th>
+                                <td> Representa o rodapé para seu ancestral mais próximo. Geralmente contém informações sobre o autor da seção, copyright ou links para documentos relacionados</td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th>header</th>
+                                <td> Representa o cabeçalho da seção específica ou da página, contendo títulos, introduções e outros elementos similares</td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th>main</th>
+                                <td> Utilizada para armazenar o conteúdo dominante da tag body, ou seja, que armazena seu conteúdo principal. Só deve existir uma tag main em cada página</td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th>nav</th>
+                                <td> Armazena links de navegação dentro do documento ou para documentos externos. Utilizado para conter menus, tabelas ou índices </td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th>section</th>
+                                <td> Utilizada para representar uma seção genérica e autônoma de um documento. As seções devem sempre ter um título, com poucas exceções</td>
+                                <td> - </td>
+                            </tr>
+                        </tbody>
+                   </table> 
+                   <br>
+                   <hr>
+                   <h3>Tags de Cabeçalho</h3>
+                   <table>
+                        <caption>
+                            Tags presentes dentro da tag head, que não são visíveis para o usuário (com exceção da tag title), mas que são importante por carregar metadados e links para outros arquivos.
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Descrição Tag</th>
+                                <th>Função / O que faz</th>
+                                <th>Atributos comuns</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th> title </th>
+                                <td> Define o título da página, título este que será mostrado na barra de títulos do browser ("orelha" do site)</td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th> style </th>
+                                <td> É responsável pelo vínculo de folhas de estilo (CSS) ao documento quando estas são declaradas dentro do próprio documento </td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th> link </th>
+                                <td> Especifica relacionamentos entre o documento atual e recursos externos. É a tag mais utilizada para vincular folhas de estilo (CSS)</td>
+                                <td> <strong>href</strong>= especifica o nome do arquivo externo; <strong>rel</strong> = especifica o tipo. Geralmente seu valor é "stylesheet" </td>
+                            </tr>
+                        </tbody>
+                   </table> 
+                   <br>
+                   <hr>
+                   <h3>Tags de Texto</h3>
+                   <table>
+                        <caption>
+                            Tags presentes dentro da tag body, que representam o conteúdo visualizado pelo usuário. São elementos que modificam a tipografia dos objetos do site
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Descrição Tag</th>
+                                <th>Função / O que faz</th>
+                                <th>Atributos comuns</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th> h1-h6 </th>
+                                <td> Representam as seções de título da página. Podem variar de 1 (título principal) até 6 (títulos secundários)</td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th> p </th>
+                                <td> Utilizada para definir um texto como parágrafo (blocos de texto separados por uma linha em branco ou identação da primeira linha) </td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th> em </th>
+                                <td> Utilizamos a tag para deixar o texto itálico. Sua função é dar ênfase na palavra ou frase, a fim de diferenciá-la das demais</td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th> strong </th>
+                                <td> O elemento indica que o conteúdo tem forte importância, seriedade ou urgência. O HTML renderiza o texto como negrito</td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th> small </th>
+                                <td> Utilizado para  renderizar um texto em tamanho menor que a fonte utilizada. Utilizada para representar comentários laterais e letras pequenas, como direitos autorais e texto jurídico, independentemente de seu estilo de apresentação</td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th> blockquote </th>
+                                <td> Utilizado para incluir uma citação. É caracterizada por um recuo no texto a esquerda. </td>
+                                <td> <strong>cite</strong> = onde inserimos o link da referência </td>
+                            </tr>
+                            <tr>
+                                <th> del </th>
+                                <td> Utilizada para representar uma faixa do texto que foi deletada do documento. É representada por um texto tachado. </td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th> ins </th>
+                                <td> Utilizada para representar uma faixa do texto que foi incluída no documento. Usada em conjunto com a tag del </td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th> sub </th>
+                                <td>  Renderiza o texto como subscrito (texto abaixo da linha base e com tamanho menor). Usado para incluir notas de rodapé, fórmulas química e para marcar o número sobrescrito de variáveis matemáticas </td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <th> sup </th>
+                                <td>  Renderiza o texto como sobrescrito (texto acima da linha base e com tamanho menor). Usado para incluir expoentes matemáticos, dispor letras na parte superior de certas palavras abreviadas em certo idiomas, representar números ordinais </td>
+                                <td> - </td>
+                            </tr>
+                        </tbody>
+                   </table> 
+                   <br>
+                   <hr>
+                </p>    
+            </section>
+        </article>
+        <article>
+            <header>
+                <h2>Conclusão</h2>
+                <a href="#menu"><small>Início</small></a>  
             </header>
             <section>
                 <p>
@@ -73,10 +274,23 @@
                 </p>
             </section>
         </article>
-        <footer>
-            <h1 id="rodapé"> Referências </h1>
-            <a href="https://www.homehost.com.br/blog/tutoriais/caracteres-especiais-acentos-html/" target="_blank"> Lista com todos os códigos para caracteres especiais </a>
-        </footer>
-    </body>
-
+    </main>
+    <hr>
+    <footer>
+        <h2 id="rodapé">Referências</h2>
+        <a href="#menu"><small>Início</small></a>  
+        <br><br>
+        <li>
+            <a href="https://www.homehost.com.br/blog/tutoriais/caracteres-especiais-acentos-html/" target="_blank">Lista com todos os códigos para caracteres especiais</a>
+        </li>
+        <br>
+        <li>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element">Documentação HTML</a>
+        </li>
+        <br>
+        <li>
+            DIO, Formação HTML Developer
+        </li>
+    </footer>
+</body>
 </html>
