@@ -1,0 +1,108 @@
+/* 1. geral */
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* 1. 1 menu */
+.menu {
+    width: 10%;
+    background-color: rgb(5, 108, 108);
+    padding: 10px 20px 0px;
+}
+
+.menu ul{
+    height: 35px;
+    list-style: none;
+    padding: 0;
+    width: 150px;
+}
+
+.menu li {
+    line-height: 30px;
+    font-size: 0.9em;
+    width: 115px;
+    border: 1px solid white;
+    margin: 5px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+/* 1.2 corpo do site */
+html, body {
+    margin: 0;
+}
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+}
+
+.content {
+    background-color: white;
+    min-height: 300px;
+    padding: 20px;
+    font-size: 18px;
+    margin: 25px;
+}
+
+.tabela {
+    background-color: white;
+    margin: 50px 50px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+/* 1.2.1 cabeçalho*/
+.header {
+    background-color: white;
+    min-height: 100px;
+}
+
+.header img {
+    margin: 10px;
+    width: 100px;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    float: left;
+}
+
+.header span h1 {
+    margin: 50px;
+    display:inline-block;
+
+}
+
+/* 1.2.2 rodapé*/
+.footer {
+    background-color:white;
+    min-height: 50px;
+    font-size: 12px;
+    text-align: center;
+    clear: both;
+}
+
+
+
